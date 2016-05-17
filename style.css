@@ -49,6 +49,11 @@ footer div {
   align-items: center;
 }
 
+footer div img {
+  min-width: 32px;
+  min-height: 33px;
+}
+
 /* Customizations of Bootstrap classes */
 
 header .row {
@@ -97,7 +102,3 @@ section.container .row {
   background-color: #FFFFFF;
 }
 
-.col-sm-1 img {
-  min-width: 32px;
-  min-height: 33px;
-}
