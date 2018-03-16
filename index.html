@@ -1,123 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>tattoodmac</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-loading">
 
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-<head>
-  <title>TattoodMac</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width">
-  <script async="" src="//www.google-analytics.com/analytics.js"></script><script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <script src="//cdn.rawgit.com/hilios/jQuery.countdown/2.2.0/dist/jquery.countdown.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <style type="text/css">
-    body {
-      padding-top: 50px;
-    }
-    .starter-template {
-      padding: 40px 15px;
-      text-align: center;
-    }
-    .panel {
-      width: 400px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    #btn-reset {
-      margin-right: 10px;
-    }
-    #clock {
-      margin-bottom: 0;
-    }
-  </style>
-</head>
-<body cz-shortcut-listen="true">
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Project name</a>
-    </div>
-    <div id="navbar" class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
+							<h1>Nick MacDonald</h1>
+							<p>Crestron Programmer</p>
+						</header>
+						<!--
+						<hr />
+						<h2>Extra Stuff!</h2>
+						<form method="post" action="#">
+							<div class="field">
+								<input type="text" name="name" id="name" placeholder="Name" />
+							</div>
+							<div class="field">
+								<input type="email" name="email" id="email" placeholder="Email" />
+							</div>
+							<div class="field">
+								<div class="select-wrapper">
+									<select name="department" id="department">
+										<option value="">Department</option>
+										<option value="sales">Sales</option>
+										<option value="tech">Tech Support</option>
+										<option value="null">/dev/null</option>
+									</select>
+								</div>
+							</div>
+							<div class="field">
+								<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
+							</div>
+							<div class="field">
+								<input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
+							</div>
+							<div class="field">
+								<label>But are you a robot?</label>
+								<input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Yes</label>
+								<input type="radio" id="robot_no" name="robot" /><label for="robot_no">No</label>
+							</div>
+							<ul class="actions">
+								<li><a href="#" class="button">Get Started</a></li>
+							</ul>
+						</form>
+						<hr />
+						-->
+						<footer>
+							<ul class="icons">
+								<li><a href="#" class="fa-twitter">Twitter</a></li>
+								<li><a href="#" class="fa-instagram">Instagram</a></li>
+								<li><a href="#" class="fa-facebook">Facebook</a></li>
+							</ul>
+						</footer>
+					</section>
 
-<div class="container">
-  <div class="starter-template">
-    <h1>Bootstrap starter template</h1>
-    <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-    <div class="panel panel-default" data-toggle="tooltip" data-placement="top" title="" data-original-title="Beautifull, insn't it?">
-      <div class="panel-body">
-        <div class="lead" id="clock">14 days 23:57:02</div>
-      </div>
-    </div>
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Tattoodmac</li>
+						</ul>
+					</footer>
 
-    <button type="button" class="btn btn-primary" id="btn-reset">
-      <i class="glyphicon glyphicon-repeat"></i>
-      Reset countdown
-    </button>
+			</div>
 
-    <div class="btn-group" data-toggle="buttons">
-      <label class="btn btn-default" id="btn-pause">
-        <input type="radio" name="options" id="option2" autocomplete="off">
-        <i class="glyphicon glyphicon-pause"></i>
-        Pause
-      </label>
+		<!-- Scripts -->
+			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
 
-      <label class="btn btn-default active" id="btn-resume">
-        <input type="radio" name="options" id="option2" autocomplete="off" checked="">
-        <i class="glyphicon glyphicon-play"></i>
-        Resume
-      </label>
-    </div>
-  </div>
-</div>
-<script type="text/javascript">
-  // Turn on Bootstrap
-  $('[data-toggle="tooltip"]').tooltip();
-
-  // 15 days from now!
-  function get15dayFromNow() {
-    return new Date(new Date().valueOf() + 15 * 24 * 60 * 60 * 1000);
-  }
-
-  var $clock = $('#clock');
-
-  $clock.countdown(get15dayFromNow(), function(event) {
-    $(this).html(event.strftime('%D days %H:%M:%S'));
-  });
-
-  $('#btn-reset').click(function() {
-    $clock.countdown(get15dayFromNow());
-  });
-
-  $('#btn-pause').click(function() {
-    $clock.countdown('pause');
-  });
-
-  $('#btn-resume').click(function() {
-    $clock.countdown('resume');
-  });
-
-</script>
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', 'UA-3435172-4', 'hilios.github.io');
-ga('send', 'pageview');
-</script>
-
-
-</body>
+	</body>
+</html>
