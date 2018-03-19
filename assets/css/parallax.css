@@ -13,7 +13,7 @@ body{
 #box2{
     height: 100vh;
     width: 100%;
-    background-image: url(i2.jpg);
+    background-image: url(images/N_Presidentials.jpg);
     background-size: cover;
     display: table;
     background-attachment: fixed;
@@ -21,7 +21,7 @@ body{
 #box3{
     height: 100vh;
     width: 100%;
-    background-image: url(i3.jpg);
+    background-image: url(images/sebagoLake.jpg);
     background-size: cover;
     display: table;
     background-attachment: fixed;
